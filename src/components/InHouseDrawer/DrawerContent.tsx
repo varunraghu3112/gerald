@@ -1,15 +1,15 @@
-import React from 'react';
-import {Alert, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {COLORS} from '../../colors';
-import {ROUTES} from '../../constants/routes';
-import {useCurrentRoute} from '../../hooks/useCurrentRoute';
-import DrawerItem from './DrawerItem';
+import React from "react";
+import { Alert, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { COLORS } from "../../colors";
+import { ROUTES } from "../../constants/routes";
+import { useCurrentRoute } from "../../hooks/useCurrentRoute";
+import DrawerItem from "./DrawerItem";
 
 function DrawerContent() {
   const currentRoute = useCurrentRoute();
 
   const handleSignOut = () => {
-    Alert.alert('Signout Called');
+    Alert.alert("Signout Called");
   };
 
   return (
@@ -18,7 +18,7 @@ function DrawerContent() {
       <DrawerItem
         label="Home"
         screenName={ROUTES.TAB.HOME}
-        params={{screen: ROUTES.HOME_STACK.Start}}
+        params={{ screen: ROUTES.HOME_STACK.Start }}
         selectedName={currentRoute || ROUTES.HOME_STACK.Start}
       />
       <DrawerItem
@@ -29,7 +29,7 @@ function DrawerContent() {
       <DrawerItem
         label="Favourites"
         screenName={ROUTES.TAB.HOME}
-        params={{screen: ROUTES.HOME_STACK.Favourites}}
+        params={{ screen: ROUTES.HOME_STACK.Favourites }}
         selectedName={currentRoute}
       />
       <DrawerItem
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     color: COLORS.TEXT.SECONDARY,
     fontSize: 24,
-    fontWeight: '600',
+    fontWeight: "600",
   },
   separator: {
     height: 1,
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   signOutText: {
     color: COLORS.TEXT.SECONDARY,
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: "600",
   },
   extraSpace: {
     flex: 1,

@@ -1,26 +1,26 @@
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import React from 'react';
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import React from "react";
 import {
   StyleSheet,
   TouchableOpacity,
   TouchableWithoutFeedback,
   View,
-} from 'react-native';
-import Animated from 'react-native-reanimated';
-import {COLORS} from '../colors';
-import {ANIMATION, EntryPoint} from '../constants/animation';
-import {ROUTES} from '../constants/routes';
-import {useDrawer} from '../context/DrawerContext';
-import {useDrawerAnimation} from '../hooks/useDrawerAnimation';
-import Contact from '../screens/Contact/Contact';
-import YourCart from '../screens/Home/YourCart';
-import HomeStackNavigator from './HomeStackNavigator';
+} from "react-native";
+import Animated from "react-native-reanimated";
+import { COLORS } from "../colors";
+import { ANIMATION, EntryPoint } from "../constants/animation";
+import { ROUTES } from "../constants/routes";
+import { useDrawer } from "../context/DrawerContext";
+import { useMainScreenAnimation } from "../hooks/useMainScreenAnimation";
+import Contact from "../screens/Contact/Contact";
+import YourCart from "../screens/Home/YourCart";
+import HomeStackNavigator from "./HomeStackNavigator";
 
 const Tab = createBottomTabNavigator();
 
 const COMMON_STYLE = {
   borderTopLeftRadius: ANIMATION.BORDER_RADIUS,
-  overflow: 'hidden' as const,
+  overflow: "hidden" as const,
   elevation: 8,
   shadowColor: COLORS.SHADOW.DEFAULT,
   shadowOffset: {
@@ -32,7 +32,7 @@ const COMMON_STYLE = {
 };
 
 const HeaderLeft = () => {
-  const {toggleDrawer} = useDrawer();
+  const { toggleDrawer } = useDrawer();
   return (
     <TouchableOpacity style={styles.menuContainer} onPress={toggleDrawer}>
       <View style={styles.menuButton}>
@@ -47,8 +47,8 @@ const HeaderLeft = () => {
 const renderHeaderLeft = () => <HeaderLeft />;
 
 function TabNavigator() {
-  const {animatedStyle} = useDrawerAnimation(EntryPoint.TAB);
-  const {isOpen, closeDrawer} = useDrawer();
+  const { animatedStyle } = useMainScreenAnimation(EntryPoint.TAB);
+  const { isOpen, closeDrawer } = useDrawer();
 
   const handlePress = () => {
     if (isOpen) {
@@ -74,26 +74,27 @@ function TabNavigator() {
               shadowOpacity: 0,
               borderBottomWidth: 0,
             },
-          }}>
+          }}
+        >
           <Tab.Screen
             name={ROUTES.TAB.HOME}
             component={HomeStackNavigator}
             options={{
-              title: 'Home',
+              title: "Home",
             }}
           />
           <Tab.Screen
             name={ROUTES.TAB.CONTACT}
             component={Contact}
             options={{
-              title: 'Contact',
+              title: "Contact",
             }}
           />
           <Tab.Screen
             name={ROUTES.TAB.CART}
             component={YourCart}
             options={{
-              title: 'Cart',
+              title: "Cart",
             }}
           />
         </Tab.Navigator>

@@ -1,6 +1,6 @@
 export enum EntryPoint {
-  DRAWER = 'drawer',
-  TAB = 'tab',
+  DRAWER = "drawer",
+  TAB = "tab",
 }
 
 export const ANIMATION = {

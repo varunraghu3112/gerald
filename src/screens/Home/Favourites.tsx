@@ -1,15 +1,21 @@
-import React from 'react';
-import {FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {COLORS} from '../../colors';
+import React from "react";
+import {
+  FlatList,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import { COLORS } from "../../colors";
 
 const DUMMY_FAVORITES = [
-  {id: '1', name: 'Item 1', price: '$19.99'},
-  {id: '2', name: 'Item 2', price: '$29.99'},
-  {id: '3', name: 'Item 3', price: '$39.99'},
+  { id: "1", name: "Item 1", price: "$19.99" },
+  { id: "2", name: "Item 2", price: "$29.99" },
+  { id: "3", name: "Item 3", price: "$39.99" },
 ];
 
 function Favourites() {
-  const renderItem = ({item}: {item: (typeof DUMMY_FAVORITES)[0]}) => (
+  const renderItem = ({ item }: { item: (typeof DUMMY_FAVORITES)[0] }) => (
     <View style={styles.itemContainer}>
       <View>
         <Text style={styles.itemName}>{item.name}</Text>
@@ -27,7 +33,7 @@ function Favourites() {
       <FlatList
         data={DUMMY_FAVORITES}
         renderItem={renderItem}
-        keyExtractor={item => item.id}
+        keyExtractor={(item) => item.id}
         contentContainerStyle={styles.listContainer}
       />
     </View>
@@ -42,7 +48,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 28,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     color: COLORS.TEXT.PRIMARY,
     marginBottom: 20,
   },
@@ -50,9 +56,9 @@ const styles = StyleSheet.create({
     gap: 15,
   },
   itemContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     backgroundColor: COLORS.WHITE,
     padding: 15,
     borderRadius: 10,
@@ -67,7 +73,7 @@ const styles = StyleSheet.create({
   },
   itemName: {
     fontSize: 18,
-    fontWeight: '600',
+    fontWeight: "600",
     color: COLORS.TEXT.PRIMARY,
     marginBottom: 5,
   },
@@ -84,7 +90,7 @@ const styles = StyleSheet.create({
   addButtonText: {
     color: COLORS.WHITE,
     fontSize: 14,
-    fontWeight: '600',
+    fontWeight: "600",
   },
 });
 

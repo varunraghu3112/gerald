@@ -1,9 +1,9 @@
-import React from 'react';
-import {Dimensions, StyleSheet, View} from 'react-native';
-import InHouseDrawer from '../components/InHouseDrawer';
-import TabNavigator from './TabNavigator';
+import React from "react";
+import { Dimensions, StyleSheet, View } from "react-native";
+import InHouseDrawer from "../components/InHouseDrawer";
+import TabNavigator from "./TabNavigator";
 
-const {width} = Dimensions.get('window');
+const { width } = Dimensions.get("window");
 const DRAWER_WIDTH = width * 0.7;
 
 function RootLayout() {
@@ -20,12 +20,12 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   drawer: {
-    position: 'absolute',
+    position: "absolute",
     left: 0,
     top: 0,
     bottom: 0,
     width: DRAWER_WIDTH,
-    backgroundColor: '#2c3e50',
+    backgroundColor: "#2c3e50",
     zIndex: 1,
   },
   drawerContent: {

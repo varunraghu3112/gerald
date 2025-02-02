@@ -1,11 +1,11 @@
-import {NavigationProp, useNavigation} from '@react-navigation/native';
-import React from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {COLORS} from '../../colors';
-import {useDrawer} from '../../context/DrawerContext';
+import { NavigationProp, useNavigation } from "@react-navigation/native";
+import React from "react";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { COLORS } from "../../colors";
+import { useDrawer } from "../../context/DrawerContext";
 
 type RootStackParamList = {
-  Home: {screen?: string} | undefined;
+  Home: { screen?: string } | undefined;
   Start: undefined;
   Favourites: undefined;
   Contact: undefined;
@@ -26,7 +26,7 @@ function DrawerItem({
   selectedName,
 }: DrawerItemProps) {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
-  const {closeDrawer} = useDrawer();
+  const { closeDrawer } = useDrawer();
 
   const isSelected =
     selectedName === screenName || selectedName === params?.screen;
@@ -42,7 +42,8 @@ function DrawerItem({
         style={[
           styles.itemContainer,
           isSelected && styles.selectedItemContainer,
-        ]}>
+        ]}
+      >
         <Text style={[styles.label, isSelected && styles.selectedLabel]}>
           {label}
         </Text>
@@ -58,7 +59,7 @@ const styles = StyleSheet.create({
   itemContainer: {
     backgroundColor: COLORS.BACKGROUND.TRANSPARENT,
     padding: 16,
-    width: '70%',
+    width: "70%",
     borderRadius: 10,
   },
   selectedItemContainer: {
@@ -67,7 +68,7 @@ const styles = StyleSheet.create({
   label: {
     color: COLORS.TEXT.TERTIARY,
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: "600",
   },
   selectedLabel: {
     color: COLORS.TEXT.SELECTED,

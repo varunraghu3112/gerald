@@ -1,11 +1,17 @@
-import React from 'react';
-import {Linking, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {COLORS} from '../../colors';
+import React from "react";
+import {
+  Linking,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import { COLORS } from "../../colors";
 
 const CONTACT_INFO = {
-  phone: '+1 999-999-9999',
-  email: 'hello@beka.com',
-  address: 'Banglore, India',
+  phone: "+1 999-999-9999",
+  email: "hello@beka.com",
+  address: "Banglore, India",
 };
 
 function Contact() {
@@ -30,7 +36,7 @@ function Contact() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
     padding: 20,
     backgroundColor: COLORS.BACKGROUND.PRIMARY,
   },
@@ -38,7 +44,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.WHITE,
     borderRadius: 15,
     padding: 20,
-    alignItems: 'center',
+    alignItems: "center",
     shadowColor: COLORS.SHADOW.DEFAULT,
     shadowOffset: {
       width: 0,
@@ -50,7 +56,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     color: COLORS.TEXT.PRIMARY,
     marginBottom: 20,
   },
@@ -62,7 +68,7 @@ const styles = StyleSheet.create({
   addressText: {
     fontSize: 16,
     color: COLORS.TEXT.TERTIARY,
-    textAlign: 'center',
+    textAlign: "center",
     marginBottom: 20,
   },
   cartButton: {
@@ -75,7 +81,7 @@ const styles = StyleSheet.create({
   cartButtonText: {
     color: COLORS.WHITE,
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: "600",
   },
 });
 

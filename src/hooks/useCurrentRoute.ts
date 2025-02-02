@@ -1,15 +1,15 @@
-import {useNavigationState} from '@react-navigation/native';
+import { useNavigationState } from "@react-navigation/native";
 
 export const useCurrentRoute = () => {
   return (
-    useNavigationState(state => {
+    useNavigationState((state) => {
       if (!state) {
-        return '';
+        return "";
       }
 
       const currentTab = state.routes[state.index];
       if (!currentTab) {
-        return '';
+        return "";
       }
 
       // Get nested stack route if exists
@@ -20,7 +20,7 @@ export const useCurrentRoute = () => {
       }
 
       // Fallback to tab route
-      return currentTab.name || '';
-    }) || ''
+      return currentTab.name || "";
+    }) || ""
   );
 };
