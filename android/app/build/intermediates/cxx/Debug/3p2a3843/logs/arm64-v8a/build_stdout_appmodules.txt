@@ -1,0 +1,141 @@
+ninja: Entering directory `/Users/varunbr/personal/gerald/Gerald/android/app/.cxx/Debug/3p2a3843/arm64-v8a'
+[0/2] Re-checking globbed directories...
+[1/3] Building CXX object CMakeFiles/appmodules.dir/Users/varunbr/personal/gerald/Gerald/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o
+FAILED: CMakeFiles/appmodules.dir/Users/varunbr/personal/gerald/Gerald/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o 
+/Users/varunbr/Library/Android/sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/Users/varunbr/Library/Android/sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/varunbr/Library/Android/sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dappmodules_EXPORTS -I/Users/varunbr/personal/gerald/Gerald/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup -I/Users/varunbr/personal/gerald/Gerald/android/app/build/generated/autolinking/src/main/jni -isystem /Users/varunbr/.gradle/caches/8.10.2/transforms/d7d422c0963f92aa7b8a765f3bd54231/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/jsi/include -isystem /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC -Wall -Werror -Wno-error=cpp -fexceptions -frtti -std=c++20 -DLOG_TAG=\"ReactNative\" -DFOLLY_NO_CONFIG=1 -MD -MT CMakeFiles/appmodules.dir/Users/varunbr/personal/gerald/Gerald/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o -MF CMakeFiles/appmodules.dir/Users/varunbr/personal/gerald/Gerald/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o.d -o CMakeFiles/appmodules.dir/Users/varunbr/personal/gerald/Gerald/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o -c /Users/varunbr/personal/gerald/Gerald/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp
+In file included from /Users/varunbr/personal/gerald/Gerald/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp:9:
+In file included from /Users/varunbr/personal/gerald/Gerald/android/app/build/generated/autolinking/src/main/jni/autolinking.h:12:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/ReactCommon/JavaTurboModule.h:16:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/jni/JCallback.h:13:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/dynamic.h:17:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/json/dynamic.h:70:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/Expected.h:38:
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/Utility.h:302:11: error: use of class template 'literal_string' requires template arguments; argument deduction not allowed in template parameter
+template <literal_string Str>
+          ^~~~~~~~~~~~~~
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/Utility.h:276:8: note: template is declared here
+struct literal_string {
+       ^
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/Utility.h:302:1: error: template parameter list for literal operator must be either 'char...' or 'typename T, T...'
+template <literal_string Str>
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/Utility.h:306:11: error: use of class template 'literal_string' requires template arguments; argument deduction not allowed in template parameter
+template <literal_string Str>
+          ^~~~~~~~~~~~~~
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/Utility.h:276:8: note: template is declared here
+struct literal_string {
+       ^
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/Utility.h:306:1: error: template parameter list for literal operator must be either 'char...' or 'typename T, T...'
+template <literal_string Str>
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/varunbr/personal/gerald/Gerald/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp:9:
+In file included from /Users/varunbr/personal/gerald/Gerald/android/app/build/generated/autolinking/src/main/jni/autolinking.h:12:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/ReactCommon/JavaTurboModule.h:16:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/jni/JCallback.h:13:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/dynamic.h:17:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/json/dynamic.h:74:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/container/F14Map.h:41:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/container/detail/F14MapFallback.h:26:
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:20: error: no member named 'regular' in namespace 'std'
+static_assert(std::regular<F14HashToken>);
+              ~~~~~^
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:28: error: 'F14HashToken' does not refer to a value
+static_assert(std::regular<F14HashToken>);
+                           ^
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:212:7: note: declared here
+class F14HashToken final {
+      ^
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:41: error: expected expression
+static_assert(std::regular<F14HashToken>);
+                                        ^
+In file included from /Users/varunbr/personal/gerald/Gerald/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp:9:
+In file included from /Users/varunbr/personal/gerald/Gerald/android/app/build/generated/autolinking/src/main/jni/autolinking.h:15:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorProviderRegistry.h:13:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorProvider.h:10:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/ComponentDescriptor.h:12:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/Props.h:12:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/PropsMacros.h:11:
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/utils/fnv1a.h:24:37: error: no type named 'identity' in namespace 'std'; did you mean 'folly::Identity'?
+template <typename CharTransformT = std::identity>
+                                    ^~~~~
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/Utility.h:253:7: note: 'folly::Identity' declared here
+using Identity = identity_fn;
+      ^
+8 errors generated.
+[2/3] Building CXX object CMakeFiles/appmodules.dir/OnLoad.cpp.o
+FAILED: CMakeFiles/appmodules.dir/OnLoad.cpp.o 
+/Users/varunbr/Library/Android/sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/Users/varunbr/Library/Android/sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/varunbr/Library/Android/sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dappmodules_EXPORTS -I/Users/varunbr/personal/gerald/Gerald/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup -I/Users/varunbr/personal/gerald/Gerald/android/app/build/generated/autolinking/src/main/jni -isystem /Users/varunbr/.gradle/caches/8.10.2/transforms/d7d422c0963f92aa7b8a765f3bd54231/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/jsi/include -isystem /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC -Wall -Werror -Wno-error=cpp -fexceptions -frtti -std=c++20 -DLOG_TAG=\"ReactNative\" -DFOLLY_NO_CONFIG=1 -MD -MT CMakeFiles/appmodules.dir/OnLoad.cpp.o -MF CMakeFiles/appmodules.dir/OnLoad.cpp.o.d -o CMakeFiles/appmodules.dir/OnLoad.cpp.o -c /Users/varunbr/personal/gerald/Gerald/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/OnLoad.cpp
+In file included from /Users/varunbr/personal/gerald/Gerald/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/OnLoad.cpp:30:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/DefaultComponentsRegistry.h:11:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/fabric/ComponentFactory.h:11:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorFactory.h:12:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/ComponentDescriptor.h:10:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/EventDispatcher.h:13:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/EventQueue.h:16:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/EventQueueProcessor.h:15:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/StatePipe.h:12:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/StateUpdate.h:12:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/StateData.h:13:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/dynamic.h:17:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/json/dynamic.h:70:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/Expected.h:38:
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/Utility.h:302:11: error: use of class template 'literal_string' requires template arguments; argument deduction not allowed in template parameter
+template <literal_string Str>
+          ^~~~~~~~~~~~~~
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/Utility.h:276:8: note: template is declared here
+struct literal_string {
+       ^
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/Utility.h:302:1: error: template parameter list for literal operator must be either 'char...' or 'typename T, T...'
+template <literal_string Str>
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/Utility.h:306:11: error: use of class template 'literal_string' requires template arguments; argument deduction not allowed in template parameter
+template <literal_string Str>
+          ^~~~~~~~~~~~~~
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/Utility.h:276:8: note: template is declared here
+struct literal_string {
+       ^
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/Utility.h:306:1: error: template parameter list for literal operator must be either 'char...' or 'typename T, T...'
+template <literal_string Str>
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/varunbr/personal/gerald/Gerald/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/OnLoad.cpp:30:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/DefaultComponentsRegistry.h:11:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/fabric/ComponentFactory.h:11:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorFactory.h:12:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/ComponentDescriptor.h:10:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/EventDispatcher.h:13:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/EventQueue.h:16:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/EventQueueProcessor.h:15:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/StatePipe.h:12:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/StateUpdate.h:12:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/StateData.h:13:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/dynamic.h:17:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/json/dynamic.h:74:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/container/F14Map.h:41:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/container/detail/F14MapFallback.h:26:
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:20: error: no member named 'regular' in namespace 'std'
+static_assert(std::regular<F14HashToken>);
+              ~~~~~^
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:28: error: 'F14HashToken' does not refer to a value
+static_assert(std::regular<F14HashToken>);
+                           ^
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:212:7: note: declared here
+class F14HashToken final {
+      ^
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/container/detail/F14Table.h:254:41: error: expected expression
+static_assert(std::regular<F14HashToken>);
+                                        ^
+In file included from /Users/varunbr/personal/gerald/Gerald/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/OnLoad.cpp:30:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/DefaultComponentsRegistry.h:11:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/fabric/ComponentFactory.h:11:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/componentregistry/ComponentDescriptorFactory.h:12:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/ComponentDescriptor.h:12:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/Props.h:12:
+In file included from /Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/renderer/core/PropsMacros.h:11:
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/react/utils/fnv1a.h:24:37: error: no type named 'identity' in namespace 'std'; did you mean 'folly::Identity'?
+template <typename CharTransformT = std::identity>
+                                    ^~~~~
+/Users/varunbr/.gradle/caches/8.10.2/transforms/ffe8bc820e361c19e57c6796da86db29/transformed/react-android-0.77.0-debug/prefab/modules/reactnative/include/folly/Utility.h:253:7: note: 'folly::Identity' declared here
+using Identity = identity_fn;
+      ^
+8 errors generated.
+ninja: build stopped: subcommand failed.

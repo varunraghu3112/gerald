@@ -1,0 +1,52 @@
+# node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+artifacts
+
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
+!debug.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
+
+!package-lock.json
+
+#yarn(for >2)
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+ios/Pods
+
+dist
+
+.jest
+coverage/
+
+lokalise_creds.yml
+output.json
+eslint-result.json
+cherrypick.txt
+
+.vscode/*
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/settings.json
+
+**/.DS_Store
+devPrefs.json
