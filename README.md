@@ -96,3 +96,7 @@ RootLayout
 - RN Gesture Handler is used to improve the performance and it needs to tightly coupled with re animated
 - Custom hooks and contexts are written for ease of reusablity Current route tracking via `useCurrentRoute` hook
 - constants are written for ease of use and reusablity
+
+Video Ref
+
+https://drive.google.com/file/d/145WCu2CoKXf_BRM4lzskBiUeHL2BjFC6/view?usp=drive_link
